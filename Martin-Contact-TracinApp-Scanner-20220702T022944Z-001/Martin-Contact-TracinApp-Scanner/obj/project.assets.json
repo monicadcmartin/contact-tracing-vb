@@ -1,0 +1,471 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0-windows7.0": {
+      "AForge/2.2.5": {
+        "type": "package",
+        "compile": {
+          "lib/AForge.dll": {}
+        },
+        "runtime": {
+          "lib/AForge.dll": {}
+        }
+      },
+      "AForge.Video/2.2.5": {
+        "type": "package",
+        "dependencies": {
+          "AForge": "2.2.5"
+        },
+        "compile": {
+          "lib/AForge.Video.dll": {}
+        },
+        "runtime": {
+          "lib/AForge.Video.dll": {}
+        }
+      },
+      "AForge.Video.DirectShow/2.2.5": {
+        "type": "package",
+        "dependencies": {
+          "AForge.Video": "2.2.5"
+        },
+        "compile": {
+          "lib/AForge.Video.DirectShow.dll": {}
+        },
+        "runtime": {
+          "lib/AForge.Video.DirectShow.dll": {}
+        }
+      },
+      "MessagingToolkit.Barcode/1.7.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net40/MessagingToolkit.Barcode.dll": {}
+        },
+        "runtime": {
+          "lib/net40/MessagingToolkit.Barcode.dll": {}
+        }
+      },
+      "MessagingToolkit.QRCode/1.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/MessagingToolkit.QRCode.dll": {}
+        },
+        "runtime": {
+          "lib/MessagingToolkit.QRCode.dll": {}
+        }
+      },
+      "WebCam/1.11.6.38": {
+        "type": "package",
+        "compile": {
+          "lib/net40/DirectShow.dll": {},
+          "lib/net40/DirectX.Capture.dll": {},
+          "lib/net40/WebCam.dll": {}
+        },
+        "runtime": {
+          "lib/net40/DirectShow.dll": {},
+          "lib/net40/DirectX.Capture.dll": {},
+          "lib/net40/WebCam.dll": {}
+        }
+      },
+      "WebcamCapturer.Controls.WinForms/1.1.1.2": {
+        "type": "package",
+        "dependencies": {
+          "WebcamCapturer.Core": "1.1.1.2"
+        },
+        "compile": {
+          "lib/net472/WebcamCapturer.Controls.WinForms.dll": {}
+        },
+        "runtime": {
+          "lib/net472/WebcamCapturer.Controls.WinForms.dll": {}
+        }
+      },
+      "WebcamCapturer.Controls.WPF/1.1.1.2": {
+        "type": "package",
+        "dependencies": {
+          "WebcamCapturer.Core": "1.1.1.2"
+        },
+        "compile": {
+          "lib/net472/WebcamCapturer.Controls.WPF.dll": {}
+        },
+        "runtime": {
+          "lib/net472/WebcamCapturer.Controls.WPF.dll": {}
+        }
+      },
+      "WebcamCapturer.Core/1.1.1.2": {
+        "type": "package",
+        "dependencies": {
+          "AForge.Video.DirectShow": "2.2.5"
+        },
+        "compile": {
+          "lib/net472/WebcamCapturer.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net472/WebcamCapturer.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AForge/2.2.5": {
+      "sha512": "clkumhM9DggqIzEXAHgVLeWO4arG5YfoPr7J4jfjJx35AoeEIJSSm49J25bwp/9mXQYLwi7y1Wunc8qgYJsGxg==",
+      "type": "package",
+      "path": "aforge/2.2.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "aforge.2.2.5.nupkg.sha512",
+        "aforge.nuspec",
+        "lib/AForge.dll",
+        "lib/AForge.xml"
+      ]
+    },
+    "AForge.Video/2.2.5": {
+      "sha512": "XqzcOXtBUagEPRqg/00oayxlCPmxP4284SdM62mVotsNoD03fs19BrzdMBfhUOOYPyd0B/IXH7tEWnSDmc2gxA==",
+      "type": "package",
+      "path": "aforge.video/2.2.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "aforge.video.2.2.5.nupkg.sha512",
+        "aforge.video.nuspec",
+        "lib/AForge.Video.dll",
+        "lib/AForge.Video.xml"
+      ]
+    },
+    "AForge.Video.DirectShow/2.2.5": {
+      "sha512": "pEch6felU/RGAbl0A7yjaQjsGxwiRFU9R+qBqR92wQo++XhzPLeQaZHnAPIBYaG7MfoqtjgCDkK4z3Tra4VQ3w==",
+      "type": "package",
+      "path": "aforge.video.directshow/2.2.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "aforge.video.directshow.2.2.5.nupkg.sha512",
+        "aforge.video.directshow.nuspec",
+        "lib/AForge.Video.DirectShow.dll",
+        "lib/AForge.Video.DirectShow.xml"
+      ]
+    },
+    "MessagingToolkit.Barcode/1.7.0.2": {
+      "sha512": "c/hDAtCFJ3Jg9dNNCHsEBadEA/t6cH9Z0pQC653wEtdsaLzI9D5MmasPaJMrdmQAn1eAYMozRyontS6KMNdm1Q==",
+      "type": "package",
+      "path": "messagingtoolkit.barcode/1.7.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/WPF/Any CPU/MessagingToolkit.Barcode.dll",
+        "lib/net35/WPF/x64/MessagingToolkit.Barcode.dll",
+        "lib/net35/WPF/x86/MessagingToolkit.Barcode.dll",
+        "lib/net35/WinForms/Any CPU/MessagingToolkit.Barcode.dll",
+        "lib/net35/WinForms/x64/MessagingToolkit.Barcode.dll",
+        "lib/net35/WinForms/x86/MessagingToolkit.Barcode.dll",
+        "lib/net40/MessagingToolkit.Barcode.dll",
+        "lib/net40/WPF/Any CPU/MessagingToolkit.Barcode.dll",
+        "lib/net40/WPF/x64/MessagingToolkit.Barcode.dll",
+        "lib/net40/WPF/x86/MessagingToolkit.Barcode.dll",
+        "lib/net40/WinForms/Any CPU/MessagingToolkit.Barcode.dll",
+        "lib/net40/WinForms/x64/MessagingToolkit.Barcode.dll",
+        "lib/net40/WinForms/x86/MessagingToolkit.Barcode.dll",
+        "lib/sl3/MessagingToolkit.Barcode.dll",
+        "lib/sl4/MessagingToolkit.Barcode.dll",
+        "lib/sl4/System.Numerics.dll",
+        "lib/sl4/System.Numerics.xml",
+        "lib/sl4/de/System.Numerics.resources.dll",
+        "lib/sl4/es/System.Numerics.resources.dll",
+        "lib/sl4/fr/System.Numerics.resources.dll",
+        "lib/sl4/it/System.Numerics.resources.dll",
+        "lib/sl4/ja/System.Numerics.resources.dll",
+        "lib/sl4/ko/System.Numerics.resources.dll",
+        "lib/sl4/ru/System.Numerics.resources.dll",
+        "lib/sl4/zh-Hans/System.Numerics.resources.dll",
+        "lib/sl4/zh-Hant/System.Numerics.resources.dll",
+        "lib/sl5/MessagingToolkit.Barcode.dll",
+        "lib/sl5/System.Numerics.dll",
+        "lib/sl5/System.Numerics.xml",
+        "lib/sl5/de/System.Numerics.resources.dll",
+        "lib/sl5/es/System.Numerics.resources.dll",
+        "lib/sl5/fr/System.Numerics.resources.dll",
+        "lib/sl5/it/System.Numerics.resources.dll",
+        "lib/sl5/ja/System.Numerics.resources.dll",
+        "lib/sl5/ko/System.Numerics.resources.dll",
+        "lib/sl5/ru/System.Numerics.resources.dll",
+        "lib/sl5/zh-Hans/System.Numerics.resources.dll",
+        "lib/sl5/zh-Hant/System.Numerics.resources.dll",
+        "lib/windows8-managed/ARM/MessagingToolkit.Barcode.dll",
+        "lib/windows8-managed/ARM/MessagingToolkit.Barcode.pri",
+        "lib/windows8-managed/Any CPU/MessagingToolkit.Barcode.dll",
+        "lib/windows8-managed/Any CPU/MessagingToolkit.Barcode.pri",
+        "lib/windows8-managed/x64/MessagingToolkit.Barcode.dll",
+        "lib/windows8-managed/x64/MessagingToolkit.Barcode.pri",
+        "lib/windows8-managed/x86/MessagingToolkit.Barcode.dll",
+        "lib/windows8-managed/x86/MessagingToolkit.Barcode.pri",
+        "lib/windows8-native+javascript/ARM/MessagingToolkit.Barcode.pri",
+        "lib/windows8-native+javascript/ARM/MessagingToolkit.Barcode.winmd",
+        "lib/windows8-native+javascript/Any CPU/MessagingToolkit.Barcode.pri",
+        "lib/windows8-native+javascript/Any CPU/MessagingToolkit.Barcode.winmd",
+        "lib/windows8-native+javascript/x64/MessagingToolkit.Barcode.pri",
+        "lib/windows8-native+javascript/x64/MessagingToolkit.Barcode.winmd",
+        "lib/windows8-native+javascript/x86/MessagingToolkit.Barcode.pri",
+        "lib/windows8-native+javascript/x86/MessagingToolkit.Barcode.winmd",
+        "lib/wp7/MessagingToolkit.Barcode.dll",
+        "lib/wp71/MessagingToolkit.Barcode.dll",
+        "lib/wp8/MessagingToolkit.Barcode.dll",
+        "messagingtoolkit.barcode.1.7.0.2.nupkg.sha512",
+        "messagingtoolkit.barcode.nuspec"
+      ]
+    },
+    "MessagingToolkit.QRCode/1.3.0": {
+      "sha512": "zgZUG9b99kyYvplxVbtN+wNkwB+7RoJJFImDZ/InT6tEKKKkMa3k1NOSKMbWlbWgwti20qCK/UxMcTV1svQ5wQ==",
+      "type": "package",
+      "path": "messagingtoolkit.qrcode/1.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MessagingToolkit.QRCode.dll",
+        "messagingtoolkit.qrcode.1.3.0.nupkg.sha512",
+        "messagingtoolkit.qrcode.nuspec"
+      ]
+    },
+    "WebCam/1.11.6.38": {
+      "sha512": "7uPqwG2tiWbUjKXvvkn9/bo7cIyL0BxKWjnHUQ/y/ikPueBXapsFEyLLXsLrDC2YY1aofVXtafYZaUwrBvExpA==",
+      "type": "package",
+      "path": "webcam/1.11.6.38",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/WebCamDialog.Designer.cs",
+        "content/WebCamDialog.cs",
+        "content/WebCamDialog.resx",
+        "images/MainIcon.png",
+        "lib/net40/DirectShow.dll",
+        "lib/net40/DirectX.Capture.dll",
+        "lib/net40/WebCam.dll",
+        "readme.txt",
+        "webcam.1.11.6.38.nupkg.sha512",
+        "webcam.nuspec"
+      ]
+    },
+    "WebcamCapturer.Controls.WinForms/1.1.1.2": {
+      "sha512": "Nni6vuowHcSZxp7lDLqHODeX4uKudKpkG1+XejTB1qmJcm9KRZ/SiDMKaZv19Y8lu5DUn42HXZKcW6oM+UPd8w==",
+      "type": "package",
+      "path": "webcamcapturer.controls.winforms/1.1.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net472/WebcamCapturer.Controls.WinForms.dll",
+        "webcamcapturer.controls.winforms.1.1.1.2.nupkg.sha512",
+        "webcamcapturer.controls.winforms.nuspec"
+      ]
+    },
+    "WebcamCapturer.Controls.WPF/1.1.1.2": {
+      "sha512": "ZjcGRJMZEQyVxy7kOb1PmDahVFgsWq4A9405/NHeD61sVHUufdfM4Voy4aAJUrd2kh4a1fbaSJGPqeescaVTAQ==",
+      "type": "package",
+      "path": "webcamcapturer.controls.wpf/1.1.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net472/WebcamCapturer.Controls.WPF.dll",
+        "webcamcapturer.controls.wpf.1.1.1.2.nupkg.sha512",
+        "webcamcapturer.controls.wpf.nuspec"
+      ]
+    },
+    "WebcamCapturer.Core/1.1.1.2": {
+      "sha512": "ryUHFtpSUnldhAE4bXl7h1dadYrrMKXSv6j1IUw7+dUvGnNSUpXCQM8kMQyRjiv2RTCVGTm3Hd8SbLhtFR1rew==",
+      "type": "package",
+      "path": "webcamcapturer.core/1.1.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net472/WebcamCapturer.Core.dll",
+        "webcamcapturer.core.1.1.1.2.nupkg.sha512",
+        "webcamcapturer.core.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0-windows7.0": [
+      "MessagingToolkit.Barcode >= 1.7.0.2",
+      "MessagingToolkit.QRCode >= 1.3.0",
+      "WebCam >= 1.11.6.38",
+      "WebcamCapturer.Controls.WPF >= 1.1.1.2",
+      "WebcamCapturer.Controls.WinForms >= 1.1.1.2",
+      "WebcamCapturer.Core >= 1.1.1.2"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\63907\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\63907\\Documents\\Random\\New Folder\\Martin Files\\Martin-Contact-TracinApp-Scanner\\Martin-Contact-TracinApp-Scanner\\Martin-Contact-TracinApp-Scanner.vbproj",
+      "projectName": "Martin-Contact-TracinApp-Scanner",
+      "projectPath": "C:\\Users\\63907\\Documents\\Random\\New Folder\\Martin Files\\Martin-Contact-TracinApp-Scanner\\Martin-Contact-TracinApp-Scanner\\Martin-Contact-TracinApp-Scanner.vbproj",
+      "packagesPath": "C:\\Users\\63907\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\63907\\Documents\\Random\\New Folder\\Martin Files\\Martin-Contact-TracinApp-Scanner\\Martin-Contact-TracinApp-Scanner\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\63907\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0-windows7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0-windows7.0": {
+        "targetAlias": "net6.0-windows",
+        "dependencies": {
+          "MessagingToolkit.Barcode": {
+            "target": "Package",
+            "version": "[1.7.0.2, )"
+          },
+          "MessagingToolkit.QRCode": {
+            "target": "Package",
+            "version": "[1.3.0, )"
+          },
+          "WebCam": {
+            "target": "Package",
+            "version": "[1.11.6.38, )"
+          },
+          "WebcamCapturer.Controls.WPF": {
+            "target": "Package",
+            "version": "[1.1.1.2, )"
+          },
+          "WebcamCapturer.Controls.WinForms": {
+            "target": "Package",
+            "version": "[1.1.1.2, )"
+          },
+          "WebcamCapturer.Core": {
+            "target": "Package",
+            "version": "[1.1.1.2, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WindowsForms": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'AForge 2.2.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "AForge",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'AForge.Video 2.2.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "AForge.Video",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'AForge.Video.DirectShow 2.2.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "AForge.Video.DirectShow",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'MessagingToolkit.Barcode 1.7.0.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "MessagingToolkit.Barcode",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'MessagingToolkit.QRCode 1.3.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "MessagingToolkit.QRCode",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'WebCam 1.11.6.38' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "WebCam",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'WebcamCapturer.Controls.WinForms 1.1.1.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "WebcamCapturer.Controls.WinForms",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'WebcamCapturer.Controls.WPF 1.1.1.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "WebcamCapturer.Controls.WPF",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'WebcamCapturer.Core 1.1.1.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "WebcamCapturer.Core",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
+}
